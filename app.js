@@ -4,6 +4,7 @@ let history = document.getElementById('history')
 let form = document.getElementById('mainform')
 let list = document.getElementById('list')
 let score = document.getElementById('score')
+let my_table = document.getElementById('my-table')
 
 let questions = []
 let answers = []
@@ -28,8 +29,17 @@ function createItem() {
 
     errors.push(diff)
 
-    let newEl = `<li><span>Sin(${q})</span><span>${a}</span><span>${correct}</span><span>${diff}</span></li>`
-    list.insertAdjacentHTML("beforeend",newEl)
+    // let newEl = `<li><span>Sin(${q})</span><span>${a}</span><span>${correct}</span><span>${diff}</span></li>`
+    
+    let newEl = `<tr>
+                    <td>Sin(${q})</td>
+                    <td>${a}</td>
+                    <td>${correct}</td>
+                    <td>${diff}</td>
+                </tr>`
+
+
+    my_table.insertAdjacentHTML("beforeend",newEl)
 
     if (errors.length)
         {

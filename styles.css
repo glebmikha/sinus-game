@@ -23,3 +23,11 @@ h1 {
 	font-family: 'Heebo', sans-serif;
 }
 
+table {
+	border: 1px solid black;
+}
+
+tr, td {
+	border: 1px solid black;
+
+}
