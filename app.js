@@ -28,7 +28,7 @@ function createItem() {
 
     errors.push(diff)
 
-    let newEl = `<li>Sin(${q}) ${a} ${correct} ${diff}</li>`
+    let newEl = `<li><span>Sin(${q})</span><span>${a}</span><span>${correct}</span><span>${diff}</span></li>`
     list.insertAdjacentHTML("beforeend",newEl)
 
     if (errors.length)
@@ -44,7 +44,7 @@ function nextQuestion() {
 
     degrees =  Math.floor(Math.random() * 90) + 1
     questions.push(degrees)
-    question.innerHTML = `sin(${degrees})?`
+    question.innerHTML = `Sin(${degrees})?`
 }
 
 nextQuestion()

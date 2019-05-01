@@ -1,0 +1,25 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	/*background-image: url(images/background2.jpg);*/
+}
+
+h1 {
+	margin-top: 40px;
+	margin-bottom: 60px;
+	text-align: center;
+	font-family: 'Days One', sans-serif;
+	font-size: 3.5em;
+}
+.grid-container {
+	border: 2px solid black;
+	width: 400px;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Heebo', sans-serif;
+}
+
