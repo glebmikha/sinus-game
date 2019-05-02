@@ -4,7 +4,9 @@
 }
 
 body {
-	/*background-image: url(images/background2.jpg);*/
+	background-image: url(images/background2.jpg);
+	background-repeat: round;
+	background-attachment: fixed;
 }
 
 h1 {
@@ -15,12 +17,15 @@ h1 {
 	font-size: 3.5em;
 }
 .grid-container {
-	border: 2px solid black;
+	border: 2px solid transparent;
 	width: 400px;
 	padding: 10px;
 	margin: auto;
 	text-align: center;
 	font-family: 'Heebo', sans-serif;
+	background-color: rgba(135, 135, 135, 0.5);
+	border-radius: 4px;
+
 }
 
 table {
@@ -34,38 +39,81 @@ th {
 
 tr, td, th {
 	border: 1px solid black;
-	padding: 3px 6px;
+	padding: 3px 5px;
+	box-sizing: border-box;
 }
 
 button {
-	margin: 0 10px;
-	height: 30px;
-	width: 100px;
+	margin: 20px 0px 20px 10px;
+	height: 40px;
+	width: 115px;
 	border-radius: 5px;
-	font-size: 1em;
+	font-size: 15px;
+	background-color: rgba(56, 60, 71, 0.5);
+	border: 1px solid rgba(56, 60, 71, 0.5);
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
 }
 
-#question {
-	font-size: 2em;
-	font-weight: bold;
-
+button:hover {
+	margin: 20px 0px 20px 10px;
+	height: 40px;
+	width: 115px;
+	border-radius: 5px;
+	font-size: 15px;
+	border: 1px solid rgba(56, 60, 71, 0.5);
+	background: radial-gradient(#E0E0E0, #454545);
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
 }
 
 #answer {
 	margin: 20px 0;
-	height: 25px;
-	width: 155px;
-	font-size: 1em;
+	padding: 0 10px;
+	height: 40px;
+	width: 188px;
+	font-size: 15px;
+	background-color: rgba(163, 164, 168, 0.7);
+	border: 1px solid transparent;
+	color: black;
+	font-family: Arial, sans-serif;
+	border-radius: 5px;
+	box-sizing: border-box;
 }
+
+
+#question {
+	font-size: 2.5em;
+	font-weight: bold;
+
+}
+
 
 #scoreGroup {
 	margin-top: 15px;
-
-
-
-
-
-
-
+	font-size: 1.2em;
 }
+
+.note {
+	text-align: justify;
+	border: 1px solid transparent;
+	width: 400px;
+	margin: auto;
+	margin-top: 15px;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: gray;
+	font-size: 1.1em;
+}
+
+strong {
+	text-decoration: underline;
+}
+
+input::-webkit-input-placeholder { 
+	color: #434344; 
+}
+
 
