@@ -24,10 +24,48 @@ h1 {
 }
 
 table {
-	border: 1px solid black;
+	border-collapse: collapse;
+	margin: auto;
 }
 
-tr, td {
+th {
+	font-size: 1em;
+}
+
+tr, td, th {
 	border: 1px solid black;
+	padding: 3px 6px;
+}
+
+button {
+	margin: 0 10px;
+	height: 30px;
+	width: 100px;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+#question {
+	font-size: 2em;
+	font-weight: bold;
 
 }
+
+#answer {
+	margin: 20px 0;
+	height: 25px;
+	width: 155px;
+	font-size: 1em;
+}
+
+#scoreGroup {
+	margin-top: 15px;
+
+
+
+
+
+
+
+}
+

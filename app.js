@@ -47,7 +47,7 @@ function createItem() {
             avg = (sum / errors.length).toFixed(2);
         }
     
-    score.innerHTML = (avg*100).toFixed(0)
+    score.innerHTML = (avg *1).toFixed(0)
 }
 
 function nextQuestion() {
