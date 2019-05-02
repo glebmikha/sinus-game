@@ -6,25 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sinus Games</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Days+One|Heebo|PT+Sans" rel="stylesheet">
 </head>
 <body>
-
+    <h1>SINUS GAME</h1>
     <div class="grid-container">
         <div id="formGroup">
         <div id='question'>Question?</div>
         <form id='mainform'>
-            <input type="text" id="answer" autocomplete="off">
+            <input type="text" id="answer" autocomplete="off" placeholder="input your answer">
             <button>Submit</button>
         </form>
         <ul id='list'></ul>
+
+        <table id="my-table">
+            <tr>
+                <th>question</th>
+                <th>answer</th>
+                <th>correct answer</th>
+                <th>% error</th>
+            </tr>
+
+        </table>
+
+
+
         </div>
 
         <div id="scoreGroup">
-            <p>On average you wrong by: </p>
-            <span id="score"></span>%
+            <p>on average you wrong by: <span id="score"></span>%</p> 
         </div>
     </div>
+    <div class="note"><strong>Sine</strong> - in mathematics, the sine is a trigonometric function of an angle. The sine of an acute angle is defined in the context of a right triangle: for the specified angle, it is the ratio of the length of the side that is opposite that angle to the length of the longest side of the triangle (the hypotenuse).</div>
 
 <script src="app.js"></script>
 </body>
 </html>
+

@@ -4,6 +4,7 @@ let history = document.getElementById('history')
 let form = document.getElementById('mainform')
 let list = document.getElementById('list')
 let score = document.getElementById('score')
+let my_table = document.getElementById('my-table')
 
 let questions = []
 let answers = []
@@ -28,8 +29,17 @@ function createItem() {
 
     errors.push(diff)
 
-    let newEl = `<li>Sin(${q}) ${a} ${correct} ${diff}</li>`
-    list.insertAdjacentHTML("beforeend",newEl)
+    // let newEl = `<li><span>Sin(${q})</span><span>${a}</span><span>${correct}</span><span>${diff}</span></li>`
+    
+    let newEl = `<tr>
+                    <td>Sin(${q})</td>
+                    <td>${a}</td>
+                    <td>${correct}</td>
+                    <td>${diff}</td>
+                </tr>`
+
+
+    my_table.insertAdjacentHTML("beforeend",newEl)
 
     if (errors.length)
         {
@@ -37,14 +47,14 @@ function createItem() {
             avg = (sum / errors.length).toFixed(2);
         }
     
-    score.innerHTML = (avg*100).toFixed(0)
+    score.innerHTML = (avg *1).toFixed(0)
 }
 
 function nextQuestion() {
 
     degrees =  Math.floor(Math.random() * 90) + 1
     questions.push(degrees)
-    question.innerHTML = `sin(${degrees})?`
+    question.innerHTML = `Sin(${degrees})?`
 }
 
 nextQuestion()
