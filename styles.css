@@ -16,6 +16,7 @@ h1 {
 	font-family: 'Days One', sans-serif;
 	font-size: 3.5em;
 }
+
 .grid-container {
 	border: 2px solid transparent;
 	width: 400px;
@@ -37,7 +38,9 @@ th {
 	font-size: 1em;
 }
 
-tr, td, th {
+tr,
+td,
+th {
 	border: 1px solid black;
 	padding: 3px 5px;
 	box-sizing: border-box;
@@ -112,8 +115,19 @@ strong {
 	text-decoration: underline;
 }
 
-input::-webkit-input-placeholder { 
-	color: #434344; 
+input::-webkit-input-placeholder {
+	color: #434344;
 }
 
+.red-score {
+	color: red;
+}
 
+.green-score {
+	color: green;
+}
+
+#emoji {
+	font-size: 100px;
+	text-align: center;
+}
