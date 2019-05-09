@@ -41,7 +41,7 @@ th {
 tr,
 td,
 th {
-	border: 1px solid black;
+	border: 1px solid #000000;
 	padding: 3px 5px;
 	box-sizing: border-box;
 }
@@ -95,7 +95,7 @@ button:hover {
 
 #scoreGroup {
 	margin-top: 15px;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 .note {
@@ -120,14 +120,34 @@ input::-webkit-input-placeholder {
 }
 
 .red-score {
-	color: red;
+	color: #B0282B;
+	text-shadow: 1px 1px 2px #000000;
 }
 
 .green-score {
-	color: green;
+	color: #23801B;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.great-score {
+	color: #000000;
+	text-shadow: 2px 1px 3px #33A10B;
+	font-weight: bold;
+}
+
+.middle-score {
+	color: #000000;
+	text-shadow: 2px 1px 3px #DBD812;
+	font-weight: bold;
+}
+
+.bad-score {
+	color: #000000;
+	text-shadow: 2px 1px 3px #D93C09;
+	font-weight: bold;
 }
 
 #emoji {
-	font-size: 100px;
+	font-size: 130px;
 	text-align: center;
 }
