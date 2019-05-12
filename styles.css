@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -12,9 +13,10 @@ body {
 h1 {
 	margin-top: 40px;
 	margin-bottom: 60px;
-	text-align: center;
 	font-family: 'Days One', sans-serif;
 	font-size: 3.5em;
+	text-align: center;
+
 }
 
 .grid-container {
@@ -32,6 +34,8 @@ h1 {
 table {
 	border-collapse: collapse;
 	margin: auto;
+	width: 100%;
+	table-layout: fixed;
 }
 
 th {
@@ -43,11 +47,10 @@ td,
 th {
 	border: 1px solid #000000;
 	padding: 3px 5px;
-	box-sizing: border-box;
+	word-wrap: break-word;
 }
 
 button {
-	margin: 20px 0px 20px 10px;
 	height: 40px;
 	width: 115px;
 	border-radius: 5px;
@@ -55,11 +58,11 @@ button {
 	background-color: rgba(56, 60, 71, 0.5);
 	border: 1px solid rgba(56, 60, 71, 0.5);
 	font-family: Arial, sans-serif;
-	box-sizing: border-box;
+	float: right;
+	margin-top: 20px;
 }
 
 button:hover {
-	margin: 20px 0px 20px 10px;
 	height: 40px;
 	width: 115px;
 	border-radius: 5px;
@@ -68,21 +71,20 @@ button:hover {
 	background: radial-gradient(#E0E0E0, #454545);
 	cursor: pointer;
 	font-family: Arial, sans-serif;
-	box-sizing: border-box;
 }
 
 #answer {
-	margin: 20px 0;
+	width: 230px;
 	padding: 0 10px;
 	height: 40px;
-	width: 188px;
 	font-size: 15px;
 	background-color: rgba(163, 164, 168, 0.7);
 	border: 1px solid transparent;
 	color: black;
 	font-family: Arial, sans-serif;
 	border-radius: 5px;
-	box-sizing: border-box;
+	float: left;
+	margin: 20px 0;
 }
 
 
@@ -95,7 +97,7 @@ button:hover {
 
 #scoreGroup {
 	margin-top: 15px;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 .note {
