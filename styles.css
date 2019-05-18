@@ -50,9 +50,13 @@ th {
 	word-wrap: break-word;
 }
 
+#mainform {
+	display: flex;
+	justify-content: space-between;
+}
+
 button {
 	height: 40px;
-	width: 115px;
 	border-radius: 5px;
 	font-size: 15px;
 	background-color: rgba(56, 60, 71, 0.5);
@@ -60,21 +64,21 @@ button {
 	font-family: Arial, sans-serif;
 	float: right;
 	margin-top: 20px;
+	flex-grow: 2;
 }
 
 button:hover {
 	height: 40px;
-	width: 115px;
 	border-radius: 5px;
 	font-size: 15px;
 	border: 1px solid rgba(56, 60, 71, 0.5);
 	background: radial-gradient(#E0E0E0, #454545);
 	cursor: pointer;
 	font-family: Arial, sans-serif;
+	flex-grow: 2
 }
 
 #answer {
-	width: 230px;
 	padding: 0 10px;
 	height: 40px;
 	font-size: 15px;
@@ -84,7 +88,8 @@ button:hover {
 	font-family: Arial, sans-serif;
 	border-radius: 5px;
 	float: left;
-	margin: 20px 0;
+	margin: 20px 10px 20px 0;
+	flex-grow: 3;
 }
 
 
